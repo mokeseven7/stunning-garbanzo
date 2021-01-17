@@ -4,4 +4,8 @@ import * as cdk from '@aws-cdk/core';
 import { StunningGarbanzoStack } from '../lib/stunning-garbanzo-stack';
 
 const app = new cdk.App();
-new StunningGarbanzoStack(app, 'StunningGarbanzoStack');
+new StunningGarbanzoStack(app, 'StunningGarbanzoStack', {
+    env: {
+        region: 'us-east-1'
+    }
+});
