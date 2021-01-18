@@ -6,6 +6,6 @@ import { StunningGarbanzoStack } from '../lib/stunning-garbanzo-stack';
 const app = new cdk.App();
 new StunningGarbanzoStack(app, 'StunningGarbanzoStack', {
     env: {
-        region: 'us-east-1'
+        region: 'us-east-1',
     }
 });
